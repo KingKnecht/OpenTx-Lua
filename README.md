@@ -7,6 +7,7 @@ Developed and testet with FrSky Horus X10S, Firmware 2.3.1
 SymGauge [https://github.com/KingKnecht/OpenTx-Lua/tree/master/SymGauge_src/SymGauge] contains a symmetrical gauge widget:
 
 ![BigSymGauge](SymGauge_src/Readme_Images/Img1.PNG)
+![2P1SymGauge](SymGauge_src/Readme_Images/Img2.PNG)
 
 Features:
   * Shows current input value
