@@ -27,6 +27,7 @@ local spotBottomOffset
 local radSpot1Angle
 local spotCircleRadius
 local spotLength
+local spot2Value = 0 -- change this value to activate a second sweet spot. Unfortunately this will be activated for all widget instances.
 
 local function background(wgt)
     return
@@ -140,6 +141,19 @@ function drawGauge(context)
         x2 = math.floor(x1 - (spotLength * math.sin(radSpot1Angle)))
         y2 = math.floor(y1 + (spotLength * math.cos(radSpot1Angle)))
         lcd.setColor(CUSTOM_COLOR, lcd.RGB(248, 248, 248)) -- Color of the sweet spot1
+        lcd.drawLine(x1, y1, x2, y2, SOLID, CUSTOM_COLOR)
+    end
+
+     --draw sweet spot2
+     if context.options.Spot1 ~= 0 then
+        radSpot2Angle = stepSize * spot2Value + math.pi -- + math.pi to rotate to the y-axis, so "0" is vertically aligned.
+        x = math.floor(context.zone.x + (context.bmpWidth * 0.5))
+        y = math.floor(context.zone.y + context.bmpHeight - spotBottomOffset)
+        x1 = math.floor(x - (spotCircleRadius * math.sin(radSpot2Angle)))
+        y1 = math.floor(y + (spotCircleRadius * math.cos(radSpot2Angle)))
+        x2 = math.floor(x1 - (spotLength * math.sin(radSpot2Angle)))
+        y2 = math.floor(y1 + (spotLength * math.cos(radSpot2Angle)))
+        lcd.setColor(CUSTOM_COLOR, lcd.RGB(248, 248, 248)) -- Color of the sweet spot2
         lcd.drawLine(x1, y1, x2, y2, SOLID, CUSTOM_COLOR)
     end
 
