@@ -1,4 +1,4 @@
--- use "/^(SymGauge).*/i" to filter for messages in the simulator debug dialog from this widget.
+-- use "/^(SymGauge).*/i" to filter for messages in the simulator debug dialog of this widget.
 -- Author: Sven Bardos ()
 -- Thanks to RealTadango (https://github.com/RealTadango/FrSky) for his lua script repos.
 
