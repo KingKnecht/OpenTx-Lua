@@ -20,7 +20,7 @@ local options = {
 local leftModeStr = 'Head'
 local rightModeStr = 'Damp'
 local offModeStr = 'Off'
-local dumpEnabled = true --set to 'true' to see some debug infos in the simulator.
+local dumpEnabled = false --set to 'true' to see some debug infos in the simulator.
 local stepSize
 local radAngle
 local spotBottomOffset
