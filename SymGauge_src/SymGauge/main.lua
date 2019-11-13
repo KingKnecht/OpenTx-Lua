@@ -1,5 +1,5 @@
--- use "/^(SymGauge).*/i" to filter for messages in the simulator debug dialog from this widget.
--- Author: Sven Bardos ()
+-- use "/^(SymGauge).*/i" to filter for messages in the simulator debug dialog of this widget.
+-- Author: Sven Bardos (https://github.com/KingKnecht)
 -- Thanks to RealTadango (https://github.com/RealTadango/FrSky) for his lua script repos.
 
 local widgetName = 'SymGauge'
