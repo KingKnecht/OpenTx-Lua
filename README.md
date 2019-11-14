@@ -17,7 +17,7 @@ Features:
     * Due the limitation to five options of Lua widget scripts, the second sweet spot needs to be defined in code.
   
 I have developed this gauge for my iGyro 3e where I can adjust the gain via slider. A negative value is activating heading mode
-and a positive value is activating damping mode. Middle postion means the gyro is not active.
+and a positive value is activating damping mode. Middle position means the gyro is not active.
 The sweet spots are to remember my favorite positions.
 
 
